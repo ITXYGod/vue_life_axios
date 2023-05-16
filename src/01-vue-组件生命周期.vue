@@ -3,15 +3,11 @@
      <h1>1. 生命周期</h1>
      <Life v-if="isShow"></Life>
      <button @click="isShow = false">销毁组件</button>
-     <hr>
-     <h1>2. axios使用</h1>
-     <UserAxios></UserAxios>
   </div>
 </template>
 
 <script>
 import Life from './components/Life.vue';
-import UserAxios from './components/UserAxios.vue';
 export default {
   data() {
      return {
@@ -19,8 +15,7 @@ export default {
      }
   },
    components: {
-     Life,
-     UserAxios
+     Life
    }
 }
 </script>
